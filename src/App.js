@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './componentes/Logo';
+import OpcoesHeader from './componentes/OpcoesHeader';
+import perfil from './imagens/perfil.svg'
+import sacola from './imagens/sacola.svg'
+
+
+const icones = [perfil, sacola];
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          SENAI
-        </p>
-        <p>by Leticia</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <Logo></Logo>
+        <OpcoesHeader></OpcoesHeader>
+        
       </header>
     </div>
   );
