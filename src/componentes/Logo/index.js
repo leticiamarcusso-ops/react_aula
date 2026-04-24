@@ -1,12 +1,20 @@
-import './estilo.css'
 import logo from '../../imagens/logo.svg'
+import styled from 'styled-components'
+
+const LogoDiv = styled.div`
+  display: flex;
+  font-size: 30px;
+`
+const LogoImg = styled.img`
+    margin-right: 10px;
+`
 
 function Logo() {
     return (
-        <div className='logo'>
-            <img src={logo} alt='logo' className='logo-img'></img>
+        <LogoDiv>
+            <LogoImg src={logo} alt='logo'></LogoImg>
             <strong><p>SENAI Books</p></strong>
-        </div>
+        </LogoDiv>
     )
 }
 
